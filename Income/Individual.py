@@ -12,7 +12,7 @@ class Individual:
         self.InitialIncome = 100
         self.IncomeChangeRate = 0.1
         self.IncomeChangeRateInst = self.IncomeChangeRate
-        self.ExpensesRate = 0.7
+        self.ExpensesRate = 0.9
         self.ExpensesRateInst = self.ExpensesRate
         self.IncomeTaxRate = 0.3
 
@@ -37,8 +37,8 @@ class Individual:
         self.Savings.append(self.Income[self.year] - self.IncomeTaxes[self.year] - self.Expenses[self.year])
         self.Wealth.append(self.Wealth[self.year - 1] + self.Savings[self.year])
 
-        # self.positionX += random.randint(-5, 5)
-        # self.positionY += random.randint(-5, 5)
+        self.positionX += random.randint(-2, 2)
+        self.positionY += random.randint(-2, 2)
 
     def increment_year(self):
         self.year += 1
