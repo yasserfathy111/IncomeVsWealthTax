@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 class Individual:
     def __init__(self):
 
-        self.positionX = random.randint(0, 100)
-        self.positionY = random.randint(0, 100)
+        self.positionX = random.randint(0, 1000)
+        self.positionY = random.randint(0, 1000)
 
         self.InitialIncome = 100
         self.IncomeChangeRate = 0.1
